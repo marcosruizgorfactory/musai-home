@@ -383,14 +383,41 @@ footer{background:var(--dark);color:var(--white);overflow:hidden}
   .dv4{grid-template-columns:auto 1fr}.dv4 .r{grid-column:1/-1;justify-content:space-between}
   .vpick span{display:none}
   .dylan-c{padding-block:32px}
-  .dylan-31{font-size:96px}
-  .gcard{aspect-ratio:4/5}
-  .gt{font-size:28px}
+  /* hombre / mujer / kids: carrusel lateral en lugar de 3 fotos apiladas */
+  .gen{display:flex;gap:4px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 4px}
+  .gen::-webkit-scrollbar{display:none}
+  .gcard{flex:0 0 78vw;aspect-ratio:3/4;scroll-snap-align:start}
+  .gt{font-size:26px}
+  /* cabeceras de carrusel: sin flechas (se desliza con el dedo) */
+  .sec-h{gap:16px;margin-bottom:24px}
+  .sec-h h2{font-size:24px}
+  .sec-h .arrows{display:none}
+  .progress{margin-top:24px}
+  /* deportes: foto menos alta y lista compacta */
+  .sports .pic{aspect-ratio:4/3}
+  .sports li a{font-size:26px;line-height:44px}
+  /* banner Dylan actual */
+  .dylan{height:auto;min-height:420px}
+  .dylan h2{font-size:28px}
+  .dylan-31{font-size:80px}
+  .dylan-t{gap:20px}
+  /* selector de versiones más discreto */
+  .vpick{padding:4px;gap:2px}
+  .vpick button{min-width:28px;height:26px;padding:0 6px;font-size:11px}
+  .steps .ph{aspect-ratio:4/3}
   .fgrid{grid-template-columns:1fr 1fr}
   .fgrid .brand{grid-column:1/-1}
   .rail{gap:12px}
 }
 @media (min-width:901px){ .look .stage{position:absolute;inset:0} }
+/* tablet: dos tarjetas de perfil por pantalla y banners de tecnología en dos columnas */
+@media (min-width:601px) and (max-width:900px){
+  .gcard{flex-basis:46vw}
+  .tech{grid-template-columns:1fr 1fr}
+  .sports{grid-template-columns:1fr 1fr;gap:32px}
+  .sports .pic{order:0;aspect-ratio:588/632}
+  .sports ul{padding-left:0}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 
