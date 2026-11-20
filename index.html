@@ -448,6 +448,29 @@ footer{background:var(--dark);color:var(--white);overflow:hidden}
   <!-- 05 Hombre / Mujer / Niño (como en el CMS: primero perfil, luego categoría) -->
   <section class="gen" id="generos" aria-label="Comprar por perfil"></section>
 
+  <!-- 09 compra el look -->
+  <section class="look" id="look" aria-label="Compra el look">
+    <div class="stage">
+      <div id="lookBgs"></div>
+      <div class="bars" id="bars"></div>
+      <div class="ctl"><button id="playBtn" aria-label="Pausar historias"></button><span id="lookSport">Baloncesto</span></div>
+      <button class="edge l" id="prevStory" aria-label="Look anterior"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 2L4 7l5 5"/></svg></button>
+      <button class="edge r" id="nextStory" aria-label="Look siguiente"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="1.6"><path d="M5 2l5 5-5 5"/></svg></button>
+      <div id="hotspots"></div>
+    </div>
+    <div class="lcard" id="lcard">
+      <div class="lview" id="lview"><div class="ltrack" id="ltrack"></div></div>
+      <div class="pnav"><button id="pPrev" aria-label="Producto anterior"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L3 6l5 5"/></svg></button><button id="pNext" aria-label="Producto siguiente"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1l5 5-5 5"/></svg></button></div>
+    </div>
+  </section>
+
+  <!-- accesorios -->
+  <section class="sec wrap" id="accesorios">
+    <div class="sec-h"><h2>Accesorios</h2><span class="sp"></span><a class="link" href="https://musaibrand.com/category/accessories">Ver todo</a><div class="arrows" data-for="railAcc"><button aria-label="Anterior">←</button><button aria-label="Siguiente">→</button></div></div>
+    <div class="rail" id="railAcc"></div>
+    <div class="progress" data-for="railAcc"><i></i></div>
+  </section>
+
   <!-- banner Dylan Ennis → editorial (6 versiones; el selector flotante cambia cuál se ve) -->
   <div id="dylanBanners" class="dvwrap">
   <a class="dylan dvv" data-v="0" href="https://marcosruizgorfactory.github.io/musai-dylan/" aria-label="Dylan Ennis se une a Musai. Descubre la historia">
@@ -489,29 +512,6 @@ footer{background:var(--dark);color:var(--white);overflow:hidden}
     <div class="c wrap"><span class="meta">DYLAN ENNIS × MUSAI</span><h2>HAY QUIENES HABLAN DE SU PASIÓN.<br><em>Y QUIENES LA EXPRESAN EN CADA JUGADA.</em></h2><span class="btn btn-white">Descubre la historia <span class="ar">→</span></span></div>
   </a>
   </div>
-
-  <!-- 09 compra el look -->
-  <section class="look" id="look" aria-label="Compra el look">
-    <div class="stage">
-      <div id="lookBgs"></div>
-      <div class="bars" id="bars"></div>
-      <div class="ctl"><button id="playBtn" aria-label="Pausar historias"></button><span id="lookSport">Baloncesto</span></div>
-      <button class="edge l" id="prevStory" aria-label="Look anterior"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 2L4 7l5 5"/></svg></button>
-      <button class="edge r" id="nextStory" aria-label="Look siguiente"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="1.6"><path d="M5 2l5 5-5 5"/></svg></button>
-      <div id="hotspots"></div>
-    </div>
-    <div class="lcard" id="lcard">
-      <div class="lview" id="lview"><div class="ltrack" id="ltrack"></div></div>
-      <div class="pnav"><button id="pPrev" aria-label="Producto anterior"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L3 6l5 5"/></svg></button><button id="pNext" aria-label="Producto siguiente"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1l5 5-5 5"/></svg></button></div>
-    </div>
-  </section>
-
-  <!-- accesorios -->
-  <section class="sec wrap" id="accesorios">
-    <div class="sec-h"><h2>Accesorios</h2><span class="sp"></span><a class="link" href="https://musaibrand.com/category/accessories">Ver todo</a><div class="arrows" data-for="railAcc"><button aria-label="Anterior">←</button><button aria-label="Siguiente">→</button></div></div>
-    <div class="rail" id="railAcc"></div>
-    <div class="progress" data-for="railAcc"><i></i></div>
-  </section>
 
   <!-- B1 banner novedades -->
   <section class="b1"><div class="wrap c"><h2>Lo nuevo de Musai<br>ya está aquí.</h2><p style="margin:0;font-size:16px">Nuevas prendas para entrenar y competir.</p><a class="btn btn-green" href="#novedades">Ver novedades <span class="ar">→</span></a></div></section>
