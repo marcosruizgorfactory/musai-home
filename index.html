@@ -162,6 +162,18 @@ header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backgrou
 .gtxt ul{display:block;max-height:0;transition:max-height .45s cubic-bezier(.2,.8,.2,1), opacity .3s}
 .gcard:hover ul,.gcard:focus-within ul,.gcard.open ul{max-height:220px}
 
+/* banner Dylan Ennis → editorial */
+.dylan{position:relative;display:flex;align-items:flex-end;height:clamp(460px,42vw,800px);margin-top:96px;overflow:hidden;color:#fff;background:#222}
+.dylan-bg{position:absolute;inset:0;background:url(img/dylan.jpg) center 30%/cover;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.dylan::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.65));pointer-events:none}
+.dylan:hover .dylan-bg{transform:scale(1.04)}
+.dylan-c{position:relative;z-index:1;width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-block:64px}
+.dylan-t{display:flex;flex-direction:column;gap:28px;align-items:flex-start}
+.dylan h2{font-weight:700;font-size:clamp(36px,3.75vw,72px);line-height:1.1;letter-spacing:-.02em}
+.dylan-31{font-weight:700;font-size:clamp(110px,11.5vw,220px);line-height:.8;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px #fff;transition:color .5s,-webkit-text-stroke-color .5s}
+.dylan:hover .dylan-31{color:var(--green);-webkit-text-stroke-color:var(--green)}
+.dylan:hover .btn .ar{transform:translateX(4px)}
+
 /* look stories */
 .look{position:relative;height:min(1000px,56vw);min-height:560px;overflow:hidden;color:var(--white);margin-top:96px;background:#111}
 .look .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .6s}
@@ -312,6 +324,9 @@ footer{background:var(--dark);color:var(--white);overflow:hidden}
   .steps .txt{padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
   .tech{grid-template-columns:1fr}
   .gen{grid-template-columns:1fr}
+  .dylan{margin-top:72px}
+  .dylan-c{padding-block:32px}
+  .dylan-31{font-size:96px}
   .gcard{aspect-ratio:4/5}
   .gt{font-size:28px}
   .fgrid{grid-template-columns:1fr 1fr}
@@ -374,6 +389,19 @@ footer{background:var(--dark);color:var(--white);overflow:hidden}
 
   <!-- 05 Hombre / Mujer / Niño (como en el CMS: primero perfil, luego categoría) -->
   <section class="gen" id="generos" aria-label="Comprar por perfil"></section>
+
+  <!-- banner Dylan Ennis → editorial -->
+  <a class="dylan" href="https://marcosruizgorfactory.github.io/musai-dylan/" aria-label="Dylan Ennis se une a Musai. Descubre la historia">
+    <div class="dylan-bg"></div>
+    <div class="wrap dylan-c">
+      <div class="dylan-t">
+        <h2>DYLAN ENNIS<br>SE UNE A MUSAI.</h2>
+        <span class="btn btn-white">Descubre la historia <span class="ar">→</span></span>
+      </div>
+      <span class="dylan-31" aria-hidden="true">31</span>
+    </div>
+  </a>
+
   <!-- 09 compra el look -->
   <section class="look" id="look" aria-label="Compra el look">
     <div class="stage">
